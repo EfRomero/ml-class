@@ -14,7 +14,7 @@ config = run.config
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
 # normalize data
-X_train = X_train.astype('float32') / 255.
+X_train = X_train.astype('float32') / 255. # normalize, keras expects weights between 0 and 1
 X_test = X_test.astype('float32') / 255.
 
 img_width = X_train.shape[1]
