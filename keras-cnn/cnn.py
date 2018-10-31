@@ -24,7 +24,7 @@ X_test = X_test.astype('float32')
 X_test /= 255.
 
 #reshape input data
-X_train = X_train.reshape(X_train.shape[0], config.img_width, config.img_height, 1)
+X_train = X_train.reshape(X_train.shape[0], config.img_width, config.img_height, 1) #conv expects 3D data
 X_test = X_test.reshape(X_test.shape[0], config.img_width, config.img_height, 1)
 
 # one hot encode outputs
